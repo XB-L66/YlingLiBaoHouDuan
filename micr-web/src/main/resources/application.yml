@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: micr-web
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  redis:
+    host: 127.0.0.1
+    port: 6379
+server:
+  port: 8000
+  servlet:
+    context-path: /api
+    encoding:
+      charset: utf-8
+      force: true
+dubbo:
+  registry:
+    address: zookeeper://localhost:2181
+  scan:
+    base-packages: com.xb.micrweb
+  consumer:
+    check: false
+    timeout: 50000
+    retries: 0
+jdwx:
+  sms:
+    url: https://way.jd.com/chuangxin/dxjk
+    appkey: 3680fa919b771148da626bbcbd459475
+    content: 【大李科技】你的验证码是：%s，三分钟有效，请勿泄露给他人
+    loginText: 【大李科技】你的验证码是：%s，三分钟有效，请勿泄露给他人
+jwt:
+  secret: 996cd10f4268436b8052c24cff508b4e

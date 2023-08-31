@@ -1,0 +1,13 @@
+com\xb\api\service\PlatBaseInfoService.class
+com\xb\api\vo\PlatInfoVo.class
+com\xb\api\vo\MultiProductVo.class
+com\xb\api\model\IncomeRecord.class
+com\xb\api\service\ProductInfoService.class
+com\xb\api\model\BidInfoProduct.class
+com\xb\api\service\UserService.class
+com\xb\api\model\FinanceAccount.class
+com\xb\api\model\BidInfo.class
+com\xb\api\model\RechargeRecord.class
+com\xb\api\model\User.class
+com\xb\api\service\InvestService.class
+com\xb\api\model\ProductInfo.class

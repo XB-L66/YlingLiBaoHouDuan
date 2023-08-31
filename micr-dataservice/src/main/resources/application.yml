@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: micr-dataservice
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ylb?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+dubbo:
+  registry:
+    address: zookeeper://localhost:2181
+    timeout: 25000
+  scan:
+    base-packages: com.xb.dataservice.service
+  provider:
+    timeout: 50000
+    retries: 0
+ylb:
+  config:
+    password-salt: asdasdasdwwwqwe
